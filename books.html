@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RST Library - Books</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-brand">RST Library</div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="books.html" class="active">Books</a>
+      <a href="events.html">Events</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="complaints.html">Complaints</a>
+    </nav>
+    <div class="nav-right">
+      <span id="usernameDisplay">User</span>
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </div>
+  </header>
+
+  <div class="search-bar-container">
+    <input type="text" id="globalSearch" placeholder="Search books by title or author..." class="search-input">
+    <button id="searchBtn" class="btn-search">Search</button>
+  </div>
+
+  <main class="container">
+    <h2>Library Books</h2>
+    <div class="filter-container">
+      <label for="categoryFilter">Category:</label>
+      <select id="categoryFilter" class="form-select">
+        <option value="All">All Categories</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="AI & ML">AI & ML</option>
+        <option value="Physics">Physics</option>
+        <option value="Web Development">Web Development</option>
+      </select>
+    </div>
+    <div id="booksGrid" class="book-grid"></div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

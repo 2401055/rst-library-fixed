@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RST Library - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-brand">RST Library</div>
+    <nav class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="books.html">Books</a>
+      <a href="events.html">Events</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="complaints.html">Complaints</a>
+    </nav>
+    <div class="nav-right">
+      <span id="usernameDisplay">User</span>
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </div>
+  </header>
+
+  <div class="search-bar-container">
+    <input type="text" id="globalSearch" placeholder="Search books by title or author..." class="search-input">
+    <button id="searchBtn" class="btn-search">Search</button>
+  </div>
+
+  <main class="container" id="homePage">
+    <h2 id="welcomeMessage">Welcome, User!</h2>
+    <section class="section">
+      <h3>Recently Added Books</h3>
+      <div id="recentBooks" class="book-grid"></div>
+    </section>
+    <section class="section">
+      <h3>Upcoming Events</h3>
+      <div id="upcomingEvents" class="event-grid"></div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RST Library - Complaints</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-brand">RST Library</div>
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="events.html">Events</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="complaints.html" class="active">Complaints</a>
+    </nav>
+    <div class="nav-right">
+      <span id="usernameDisplay">User</span>
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </div>
+  </header>
+
+  <div class="search-bar-container">
+    <input type="text" id="globalSearch" placeholder="Search books by title or author..." class="search-input">
+    <button id="searchBtn" class="btn-search">Search</button>
+  </div>
+
+  <main class="container complaint-page">
+    <h2>Submit Feedback / Complaint</h2>
+    <form id="complaintForm">
+      <div class="form-group">
+        <label for="issueType">Issue Type</label>
+        <select id="issueType" class="form-select" required>
+          <option value="">Select type</option>
+          <option value="Technical Issue">Technical Issue</option>
+          <option value="Another issue type">Another issue type</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="complaintMessage">Message</label>
+        <textarea id="complaintMessage" rows="5" placeholder="Describe your issue..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Submit Feedback</button>
+    </form>
+    <div class="contact-info">
+      <h3>Contact Us</h3>
+      <p>Email: library@rst.edu</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Working hours: Mon–Fri 8am – 8pm, Sat 10am – 4pm</p>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
